@@ -1,4 +1,3 @@
-import React from "react";
 import pizzaImg from "@/public/pizza.png";
 import courseImg from "@/public/course.png";
 import chatImg from "@/public/chat.png";
