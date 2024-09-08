@@ -10,7 +10,8 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
-  const formRef = useRef(null);
+  // const formRef = useRef(null);
+  const formRef = useRef<HTMLFormElement | null>(null);
 
   return (
     <motion.section
@@ -52,7 +53,8 @@ export default function Contact() {
           }
 
           toast.success("Email sent successfully!");
-          formRef.current.reset();
+          formRef.current?.reset();
+          
         }}
       >
         <input
